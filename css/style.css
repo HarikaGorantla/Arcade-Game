@@ -1,0 +1,79 @@
+/*style.css
+   This file provides the game styles like popup mesages after completion of game or
+   after collision with the enemy
+*/
+body {
+  text-align: center;
+}
+
+/*the below styles are used to dispaly the pop up window after completion of game */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: white;
+  background-image: url("../images/congo.jpg");
+}
+
+.modal-content {
+  background: linear-gradient(160deg, #1a8af0 40%, #bf268c 60%);
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-family: arial;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*This below style is for play again button in the pop up window */
+.play_again {
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/*The below styles are used to display the pop up after 4 collisions  */
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: white;
+}
+
+.modal-content1 {
+  background: white;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-family: arial;
+  background: linear-gradient(peachpuff, palegoldenrod);
+}
